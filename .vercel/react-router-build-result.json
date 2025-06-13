@@ -1,0 +1,144 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/sitemap-index[.]xml": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/sitemap.$lang[.]xml": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/resource.locales": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/robots[.]txt": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_index": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/$": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "routes/sitemap-index[.]xml": {
+        "id": "routes/sitemap-index[.]xml",
+        "parentId": "root",
+        "file": "app/routes/sitemap-index[.]xml.ts",
+        "path": "sitemap-index.xml",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/sitemap.$lang[.]xml": {
+        "id": "routes/sitemap.$lang[.]xml",
+        "parentId": "root",
+        "file": "app/routes/sitemap.$lang[.]xml.ts",
+        "path": "sitemap/:lang.xml",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/resource.locales": {
+        "id": "routes/resource.locales",
+        "parentId": "root",
+        "file": "app/routes/resource.locales.ts",
+        "path": "resource/locales",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/robots[.]txt": {
+        "id": "routes/robots[.]txt",
+        "parentId": "root",
+        "file": "app/routes/robots[.]txt.ts",
+        "path": "robots.txt",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_index": {
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "app/routes/_index.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/$": {
+        "id": "routes/$",
+        "parentId": "root",
+        "file": "app/routes/$.tsx",
+        "path": "*",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/techling/Code/Personal/HigTrib/remix-vercel/app",
+    "basename": "/",
+    "buildDirectory": "/Users/techling/Code/Personal/HigTrib/remix-vercel/build",
+    "future": {
+      "unstable_optimizeDeps": true,
+      "unstable_splitRouteModules": true,
+      "unstable_viteEnvironmentApi": true
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/sitemap-index[.]xml": {
+        "id": "routes/sitemap-index[.]xml",
+        "parentId": "root",
+        "file": "routes/sitemap-index[.]xml.ts",
+        "path": "sitemap-index.xml"
+      },
+      "routes/sitemap.$lang[.]xml": {
+        "id": "routes/sitemap.$lang[.]xml",
+        "parentId": "root",
+        "file": "routes/sitemap.$lang[.]xml.ts",
+        "path": "sitemap/:lang.xml"
+      },
+      "routes/resource.locales": {
+        "id": "routes/resource.locales",
+        "parentId": "root",
+        "file": "routes/resource.locales.ts",
+        "path": "resource/locales"
+      },
+      "routes/robots[.]txt": {
+        "id": "routes/robots[.]txt",
+        "parentId": "root",
+        "file": "routes/robots[.]txt.ts",
+        "path": "robots.txt"
+      },
+      "routes/_index": {
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "routes/_index.tsx",
+        "index": true
+      },
+      "routes/$": {
+        "id": "routes/$",
+        "parentId": "root",
+        "file": "routes/$.tsx",
+        "path": "*"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

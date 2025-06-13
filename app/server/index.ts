@@ -3,6 +3,7 @@ import { i18next } from "remix-hono/i18next"
 import i18nextOpts from "~/localization/i18n.server"
 import { getLoadContext } from "./context"
 
+import "~/localization/i18n.server"
 export default await createHonoServer({
 	configure(server) {
 		server.use("*", i18next(i18nextOpts))
