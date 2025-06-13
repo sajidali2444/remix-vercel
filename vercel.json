@@ -14,5 +14,6 @@
 			"dest": "/api/index.js"
 		}
 	],
-	"buildCommand": "pnpm run build"
+	"buildCommand": "pnpm run build",
+	"installCommand": "corepack enable && pnpm install"
 }
