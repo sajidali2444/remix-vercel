@@ -15,5 +15,20 @@
 		}
 	],
 	"buildCommand": "pnpm run build",
-	"installCommand": "corepack enable && pnpm install"
+	"devCommand": "pnpm run dev",
+	"installCommand": "pnpm install",
+	"framework": "remix",
+	"outputDirectory": "build/client",
+	"functions": {
+		"api/**/*.ts": {
+			"memory": 1024,
+			"maxDuration": 10
+		}
+	},
+	"rewrites": [
+		{
+			"source": "/(.*)",
+			"destination": "/api"
+		}
+	]
 }
