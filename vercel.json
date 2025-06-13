@@ -3,11 +3,5 @@
 	"devCommand": "pnpm run dev",
 	"installCommand": "pnpm install",
 	"framework": "remix",
-	"outputDirectory": "build/client",
-	"functions": {
-		"app/server/**/*.ts": {
-			"memory": 1024,
-			"maxDuration": 10
-		}
-	}
+	"outputDirectory": "build/client"
 }
