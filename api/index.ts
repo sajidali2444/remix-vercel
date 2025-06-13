@@ -1,3 +1,3 @@
-import server from "../app/server/index.js"
+import server from "../build/server/index.js"
 
 export default server

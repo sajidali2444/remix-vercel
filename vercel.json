@@ -15,5 +15,11 @@
 	"devCommand": "pnpm run dev",
 	"installCommand": "pnpm install",
 	"framework": null,
-	"outputDirectory": "build"
+	"outputDirectory": "build",
+	"functions": {
+		"api/**/*.ts": {
+			"memory": 1024,
+			"maxDuration": 10
+		}
+	}
 }
