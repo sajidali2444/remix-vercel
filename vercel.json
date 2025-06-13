@@ -14,6 +14,6 @@
 	"buildCommand": "pnpm run build",
 	"devCommand": "pnpm run dev",
 	"installCommand": "pnpm install",
-	"framework": "remix",
-	"outputDirectory": "build/client"
+	"framework": null,
+	"outputDirectory": "build"
 }
