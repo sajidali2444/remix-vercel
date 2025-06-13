@@ -5,24 +5,15 @@
 			"use": "@vercel/node"
 		}
 	],
-	"routes": [
+	"rewrites": [
 		{
-			"handle": "filesystem"
-		},
-		{
-			"src": "/(.*)",
-			"dest": "/api/index.js"
+			"source": "/(.*)",
+			"destination": "/api"
 		}
 	],
 	"buildCommand": "pnpm run build",
 	"devCommand": "pnpm run dev",
 	"installCommand": "pnpm install",
 	"framework": "remix",
-	"outputDirectory": "build/client",
-	"rewrites": [
-		{
-			"source": "/(.*)",
-			"destination": "/api"
-		}
-	]
+	"outputDirectory": "build/client"
 }
